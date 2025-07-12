@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rive Jherom - Estudio de Tatuajes Profesional - Arte corporal personalizado y artístico" />
+  <meta name="keywords" content="tatuajes, estudio de tatuajes, realismo, blackwork, tatuador profesional, Chihuahua" />
+  <meta name="author" content="Rive Jherom" />
+  <meta name="robots" content="index, follow" />
+  <title>Rive Jherom | Arte Profesional</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    :root {
+      --verde-esmeralda: #2ecc71;
+      --dorado: #d4af37;
+      --blanco: #ffffff;
+      --negro: #0f0f0f;
+      --gris:   #2c2c2c;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Montserrat',sans-serif;background:var(--negro) url('https://www.transparenttextures.com/patterns/asfalt-dark.png') repeat;color:var(--blanco);scroll-behavior:smooth;line-height:1.6}
+    section{scroll-margin-top:100px}
+    header{background:var(--gris);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+    header h1{font-family:'Playfair Display',serif;font-size:2rem;color:var(--dorado)}
+    nav a{color:var(--blanco);margin-left:1rem;text-decoration:none;font-weight:600;transition:color .3s}
+    nav a:hover{color:var(--verde-esmeralda)}
+    .hero{background:linear-gradient(to bottom right,var(--negro),var(--gris));padding:6rem 2rem;text-align:center;animation:fadeIn 1.2s}
+    .hero h2{font-family:'Playfair Display',serif;font-size:3.2rem;color:var(--dorado);margin-bottom:1rem}
+    .hero p{max-width:700px;margin:0 auto;color:#ccc;font-size:1.25rem}
+    .btn{display:inline-block;margin-top:2rem;padding:1rem 2.2rem;background:var(--verde-esmeralda);color:var(--blanco);border:none;border-radius:8px;font-weight:bold;font-size:1.1rem;cursor:pointer;transition:background .3s,transform .3s,box-shadow .3s}
+    .btn:hover{background:#27ae60;transform:scale(1.05);box-shadow:0 8px 20px rgba(46,204,113,.3)}
+    .section{padding:4rem 2rem}
+    .section h3{font-family:'Playfair Display',serif;font-size:2.5rem;color:var(--dorado);text-align:center;margin-bottom:2rem}
+    .grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{background:var(--gris);border-radius:12px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,.4)}
+    .card img{width:100%;height:auto;display:block}
+    form{max-width:600px;margin:4rem auto;background:var(--gris);padding:3rem 2rem;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.5)}
+    form label{display:block;margin-bottom:.3rem;font-weight:600}
+    form input,form textarea{width:100%;padding:.75rem;border-radius:8px;border:none;background:#1e1e1e;color:#fff;margin-bottom:1rem}
+    form input::placeholder,form textarea::placeholder{color:#777}
+    footer{background:#111;padding:2rem;text-align:center;font-size:.9rem;color:#aaa}
+    .wa-btn{position:fixed;bottom:20px;right:20px;background:#25d366;padding:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0;border:none;box-shadow:0 4px 12px rgba(0,0,0,.3);transition:transform .3s}
+    .wa-btn:hover{transform:scale(1.1)}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rive Jherom</h1>
+    <nav>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#artistas">Artistas</a>
+      <a href="#cita">Agenda</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <h2>Arte que deja marca</h2>
+      <p>Realismo, Black & Grey, Neo Tradicional y más. Transformamos tu piel en arte eterno.</p>
+      <a href="#cita" class="btn">Reserva tu cita</a>
+    </section>
+
+    <section class="section" id="portafolio">
+      <h3>Galería de Tatuajes</h3>
+      <div class="grid">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://54tattoostudio.com/wp-content/uploads/2023/01/IMG_7147.jpg" alt="Black & Grey" loading="lazy" decoding="async" />
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://clubtattoo.es/wp-content/uploads/2023/04/tatuaje-realismo-black-and-grey-cebaztattoo14-600x800.jpg" alt="Realismo" loading="lazy" decoding="async" />
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://www.greylinetattoo.com/wp-content/uploads/2024/02/IMG_7917.jpg" alt="Linework" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <h3>Contáctanos</h3>
+      <form id="contact-form">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required />
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="¿Qué tipo de tatuaje deseas?" required></textarea>
+        <button class="btn" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Rive Jherom. Todos los derechos reservados.</p>
+    <p><a href="#" style="color:var(--verde-esmeralda);text-decoration:none;">Política de privacidad</a></p>
+  </footer>
+
+  <!-- Botón flotante WhatsApp con logo oficial -->
+  <a href="https://wa.me/5216391235024" target="_blank" class="wa-btn" role="button" aria-label="Contáctanos por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40" height="40" style="display:block;" />
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const formData = new FormData(form);
+
+      fetch("https://script.google.com/macros/s/AKfycbw7F03bvhaUZW8bYqPwOQl4NVn0Rph1D09ZwLzvm3iC47waNYSAdmy8gUIvi87Pte9x/exec", {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+        form.innerHTML = '<p style="color: var(--verde-esmeralda); text-align: center; font-size: 1.2rem;">¡Gracias! Tu mensaje fue enviado correctamente.</p>';
+      })
+      .catch(error => {
+        form.innerHTML = '<p style="color: red; text-align: center; font-size: 1.2rem;">Hubo un error. Intenta de nuevo.</p>';
+      });
+    });
+  </script>
+</body>
+</html>
