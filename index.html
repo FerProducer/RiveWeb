@@ -28,7 +28,30 @@
     header h1{font-family:'Playfair Display',serif;font-size:2rem;color:var(--dorado)}
     nav a{color:var(--blanco);margin-left:1rem;text-decoration:none;font-weight:600;transition:color .3s}
     nav a:hover{color:var(--verde-esmeralda)}
-    .hero{background:linear-gradient(to bottom right,var(--negro),var(--gris));padding:6rem 2rem;text-align:center;animation:fadeIn 1.2s}
+    .hero {
+      position: relative;
+      background-image: url('https://images.pexels.com/photos/428105/pexels-photo-428105.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 100px 20px;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 0;
+    }
+    .hero h2, .hero p, .hero .btn {
+      position: relative;
+      z-index: 1;
+    }
     .hero h2{font-family:'Playfair Display',serif;font-size:3.2rem;color:var(--dorado);margin-bottom:1rem}
     .hero p{max-width:700px;margin:0 auto;color:#ccc;font-size:1.25rem}
     .btn{display:inline-block;margin-top:2rem;padding:1rem 2.2rem;background:var(--verde-esmeralda);color:var(--blanco);border:none;border-radius:8px;font-weight:bold;font-size:1.1rem;cursor:pointer;transition:background .3s,transform .3s,box-shadow .3s}
@@ -137,27 +160,11 @@
   </header>
 
   <main>
-    <section class="hero" id="inicio" style="
-      background-image: url('https://images.pexels.com/photos/428105/pexels-photo-428105.jpeg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 100px 20px;
-      color: white;
-      text-shadow: 0 0 10px rgba(0,0,0,0.7);
-      text-align: center;
-    ">
+    <section class="hero" id="inicio">
+      <div class="overlay"></div>
       <h2>Arte que deja marca</h2>
       <p>Realismo, Black & Grey, Neo Tradicional y más. Transformamos tu piel en arte eterno.</p>
-      <a href="https://wa.me/5216391235024" class="btn" style="
-        background: black;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 15px;
-      ">Reserva tu cita</a>
+      <a href="https://wa.me/5216391235024" class="btn">Reserva tu cita</a>
     </section>
 
     <section class="section" id="portafolio">
@@ -194,7 +201,6 @@
     <p><a href="#" style="color:var(--verde-esmeralda);text-decoration:none;">Política de privacidad</a></p>
   </footer>
 
-  <!-- Botón flotante WhatsApp -->
   <a href="https://wa.me/5216391235024" target="_blank" class="wa-btn" role="button" aria-label="Contáctanos por WhatsApp">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40" height="40" style="display:block;" />
   </a>
