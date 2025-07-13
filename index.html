@@ -139,7 +139,7 @@
       })
       .then(response => response.text())
       .then(data => {
-        form.innerHTML = '<p style="color: var(--verde-esmeralda); text-align: center; font-size: 1.2rem;">¡Gracias! Tu mensaje fue enviado correctamente.</p>';
+        form.innerHTML = '<p style="color: var(--verde-esmeralda); text-align: center; font-size: 1.2rem;">¡Gracias! Tu mensaje fue enviado correctamente. Nos comunicaremos contigo en breve.</p>';
       })
       .catch(error => {
         form.innerHTML = '<p style="color: red; text-align: center; font-size: 1.2rem;">Hubo un error. Intenta de nuevo.</p>';
@@ -148,3 +148,4 @@
   </script>
 </body>
 </html>
+
