@@ -19,7 +19,7 @@
       --dorado: #d4af37;
       --blanco: #ffffff;
       --negro: #0f0f0f;
-      --gris:   #2c2c2c;
+      --gris: #2c2c2c;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'Montserrat',sans-serif;background:var(--negro) url('https://www.transparenttextures.com/patterns/asfalt-dark.png') repeat;color:var(--blanco);scroll-behavior:smooth;line-height:1.6}
@@ -47,6 +47,84 @@
     .wa-btn{position:fixed;bottom:20px;right:20px;background:#25d366;padding:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0;border:none;box-shadow:0 4px 12px rgba(0,0,0,.3);transition:transform .3s}
     .wa-btn:hover{transform:scale(1.1)}
     @keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      .btn {
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+      }
+
+      .section h3 {
+        font-size: 2rem;
+        padding: 0 1rem;
+      }
+
+      form {
+        margin: 2rem 1rem;
+        padding: 2rem 1rem;
+      }
+
+      form input, form textarea {
+        font-size: 1rem;
+      }
+
+      footer {
+        font-size: 0.8rem;
+        padding: 1.5rem 1rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .wa-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+      }
+
+      .wa-btn img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .hero h2 {
+        font-size: 2.6rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .section h3 {
+        font-size: 2.2rem;
+      }
+
+      .btn {
+        font-size: 1.05rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -58,31 +136,28 @@
     </nav>
   </header>
 
- <main>
-  <section class="hero" id="inicio" style="
-    background-image: url('https://images.pexels.com/photos/428105/pexels-photo-428105.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 20px;
-    color: white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.7);
-    text-align: center;
-  ">
-    <h2>Arte que deja marca</h2>
-    <p>Realismo, Black & Grey, Neo Tradicional y más. Transformamos tu piel en arte eterno.</p>
-    <a href="https://wa.me/5216391235024" class="btn" style="
-      background: black;
+  <main>
+    <section class="hero" id="inicio" style="
+      background-image: url('https://images.pexels.com/photos/428105/pexels-photo-428105.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 100px 20px;
       color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 15px;
-    ">Reserva tu cita</a>
-  </section>
-</main>
-
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+      text-align: center;
+    ">
+      <h2>Arte que deja marca</h2>
+      <p>Realismo, Black & Grey, Neo Tradicional y más. Transformamos tu piel en arte eterno.</p>
+      <a href="https://wa.me/5216391235024" class="btn" style="
+        background: black;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 15px;
+      ">Reserva tu cita</a>
     </section>
 
     <section class="section" id="portafolio">
@@ -105,7 +180,7 @@
       <form id="contact-form">
         <label for="name">Nombre</label>
         <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required />
-        <label for="email">Numero de telefono</label>
+        <label for="email">Número de teléfono</label>
         <input type="number" id="number" name="number" placeholder="6391234567" required />
         <label for="message">Describe tu tatuaje</label>
         <textarea id="message" name="message" rows="4" placeholder="¿Qué tipo de tatuaje deseas?" required></textarea>
@@ -119,7 +194,7 @@
     <p><a href="#" style="color:var(--verde-esmeralda);text-decoration:none;">Política de privacidad</a></p>
   </footer>
 
-  <!-- Botón flotante WhatsApp con logo oficial -->
+  <!-- Botón flotante WhatsApp -->
   <a href="https://wa.me/5216391235024" target="_blank" class="wa-btn" role="button" aria-label="Contáctanos por WhatsApp">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40" height="40" style="display:block;" />
   </a>
@@ -129,10 +204,8 @@
   <script>
     document.getElementById("contact-form").addEventListener("submit", function(e) {
       e.preventDefault();
-
       const form = e.target;
       const formData = new FormData(form);
-
       fetch("https://script.google.com/macros/s/AKfycbwKIomeiHmWqRpes83cfljaQc2ezx6CIMayw70Wf8duQ7AMmg8MVaw_pBau0vBwE7NX/exec", {
         method: "POST",
         body: formData
@@ -148,4 +221,3 @@
   </script>
 </body>
 </html>
-
