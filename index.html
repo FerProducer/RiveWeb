@@ -54,8 +54,8 @@
     <h1>Rive Jherom</h1>
     <nav>
       <a href="#portafolio">Portafolio</a>
-      <a href="#artistas">Artistas</a>
-      <a href="#cita">Agenda</a>
+      <a href="#portafolio">Artistas</a>
+      <a href="#contacto">Agenda</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
@@ -64,20 +64,20 @@
     <section class="hero" id="inicio">
       <h2>Arte que deja marca</h2>
       <p>Realismo, Black & Grey, Neo Tradicional y más. Transformamos tu piel en arte eterno.</p>
-      <a href="#cita" class="btn">Reserva tu cita</a>
+      <a href="https://wa.me/5216391235024" class="btn">Reserva tu cita</a>
     </section>
 
     <section class="section" id="portafolio">
       <h3>Galería de Tatuajes</h3>
       <div class="grid">
         <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <img src="https://54tattoostudio.com/wp-content/uploads/2023/01/IMG_7147.jpg" alt="Black & Grey" loading="lazy" decoding="async" />
+          <img src="https://github.com/FerProducer/RiveWeb/blob/main/WhatsApp%20Image%202025-07-12%20at%206.12.31%20PM.jpeg?raw=true" alt="Black & Grey" loading="lazy" decoding="async" />
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="200">
-          <img src="https://clubtattoo.es/wp-content/uploads/2023/04/tatuaje-realismo-black-and-grey-cebaztattoo14-600x800.jpg" alt="Realismo" loading="lazy" decoding="async" />
+          <img src="https://github.com/FerProducer/RiveWeb/blob/main/WhatsApp%20Image%202025-07-12%20at%206.13.55%20PM.jpeg?raw=true" alt="Realismo" loading="lazy" decoding="async" />
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="300">
-          <img src="https://www.greylinetattoo.com/wp-content/uploads/2024/02/IMG_7917.jpg" alt="Linework" loading="lazy" decoding="async" />
+          <img src="https://github.com/FerProducer/RiveWeb/blob/main/WhatsApp%20Image%202025-07-12%20at%206.13.23%20PM.jpeg?raw=true" alt="Linework" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -87,9 +87,9 @@
       <form id="contact-form">
         <label for="name">Nombre</label>
         <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required />
-        <label for="email">Correo</label>
-        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
-        <label for="message">Mensaje</label>
+        <label for="email">Numero de telefono</label>
+        <input type="number" id="number" name="number" placeholder="6391234567" required />
+        <label for="message">Describe tu tatuaje</label>
         <textarea id="message" name="message" rows="4" placeholder="¿Qué tipo de tatuaje deseas?" required></textarea>
         <button class="btn" type="submit">Enviar mensaje</button>
       </form>
@@ -115,7 +115,7 @@
       const form = e.target;
       const formData = new FormData(form);
 
-      fetch("https://script.google.com/macros/s/AKfycbw7F03bvhaUZW8bYqPwOQl4NVn0Rph1D09ZwLzvm3iC47waNYSAdmy8gUIvi87Pte9x/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbwKIomeiHmWqRpes83cfljaQc2ezx6CIMayw70Wf8duQ7AMmg8MVaw_pBau0vBwE7NX/exec", {
         method: "POST",
         body: formData
       })
