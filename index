@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad | Rive Jherom</title>
+  <style>
+    :root {
+      --fondo: #0f0f0f;
+      --texto: #f5f5f5;
+      --acento: #d32f2f;
+      --gris: #999;
+      --fuente: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--fondo);
+      color: var(--texto);
+      font-family: var(--fuente);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid var(--acento);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--acento);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #121212;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00000088;
+    }
+
+    h2 {
+      color: var(--acento);
+      margin-top: 2rem;
+    }
+
+    p {
+      color: var(--texto);
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--gris);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Política de Privacidad</h1>
+  </header>
+  <main>
+    <p>En <strong>Rive Jherom - Estudio de Tatuajes</strong>, nos tomamos muy en serio tu privacidad. Esta política explica cómo recopilamos, usamos y protegemos tus datos personales cuando rellenas nuestro formulario de contacto para agendar una cita.</p>
+
+    <h2>1. Datos que recopilamos</h2>
+    <p>Al llenar nuestro formulario de cita, solicitamos los siguientes datos:</p>
+    <ul>
+      <li>Nombre completo</li>
+      <li>Número de teléfono</li>
+    </ul>
+
+    <h2>2. Finalidad del tratamiento</h2>
+    <p>Los datos proporcionados se utilizarán exclusivamente para:</p>
+    <ul>
+      <li>Gestionar y confirmar tu cita.</li>
+      <li>Contactarte en caso de cambios, confirmaciones o recordatorios.</li>
+    </ul>
+
+    <h2>3. Conservación de los datos</h2>
+    <p>Los datos serán almacenados de forma segura y confidencial, y se conservarán únicamente durante el tiempo necesario para cumplir con la finalidad mencionada.</p>
+
+    <h2>4. Protección de la información</h2>
+    <p>Implementamos medidas de seguridad técnicas y organizativas para garantizar la confidencialidad e integridad de tus datos personales.</p>
+
+    <h2>5. Derechos del titular</h2>
+    <p>Como titular de los datos, tienes derecho a:</p>
+    <ul>
+      <li>Acceder a tus datos.</li>
+      <li>Solicitar la rectificación o eliminación.</li>
+      <li>Revocar el consentimiento en cualquier momento.</li>
+    </ul>
+    <p>Para ejercer estos derechos, puedes contactarnos en cualquier momento vía WhatsApp o mediante nuestros canales oficiales.</p>
+
+    <h2>6. Terceros</h2>
+    <p>No compartimos tus datos con terceros, salvo que exista una obligación legal o sea necesario para brindarte el servicio.</p>
+
+    <h2>7. Cambios a esta política</h2>
+    <p>Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Los cambios serán publicados en esta misma página con la fecha de última actualización.</p>
+
+    <h2>8. Aceptación</h2>
+    <p>Al enviar el formulario, aceptas de manera expresa esta política de privacidad.</p>
+
+    <p><em>Última actualización: julio 2025</em></p>
+  </main>
+  <footer>
+    © 2025 Rive Jherom - Estudio de Tatuajes. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
